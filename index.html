@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <nav>
+        <h2 class="navigation">Personal Bookshelf</h2>
+        <button class="navigation" style="float: right;">Add New Book</button>
+        <div style="clear: both;"></div>
+    </nav>
+
+    <div class="modal">
+        <div class="modal-content">
+            <label for="title">Book Title</label>
+            <input type="text" name="title" id="title"><br>
+            <label for="iage-url">Image URL</label>
+            <input type="text" name="image-url" id="image-url"><br>
+            <label for="text">Review</label>
+            <input type="text" name="review" id="review"><br>
+        </div>
+        <div class="modal-actions">
+            <button class="btn" id="btn-cancel">Cancel</button>
+            <button class="btn" id="btn-add">Add</button>
+        </div>
+    </div>
+
+    <main>
+        <section id="entry-text">
+            <p>Empty Shelf!</p>
+        </section>
+        <ul id="book-list"></ul>
+    </main>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
